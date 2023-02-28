@@ -1,0 +1,228 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="estilo48.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+        <!-- NAVEGACIÓN MÓVIL -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">☰</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+      
+      <!-- SOCIALES -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGEN-->
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;">
+        <!--BOTONES DE REDES SOCIALES-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+        <!--BOTÓN DE DOWNLOAD-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down" style="vertical-align: -0.35em;"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            <span class="w3-margin-left download-text">BAJAR CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--BARRA DE NAVEGACIÓN SUPERIOR-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACTO</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HISTORIAL</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUMEN</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--TÍTULO-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            
+            <h1>Jim Graham</h1>
+            <h2>Ing. Químico</h2>
+            <p></p>
+          </div>
+
+          <!--RESUMEN-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUMEN</h2>
+            <p class="w3-margin-top-2"> 
+              Lorem ipsum 
+               Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+               Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+               Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+               Lorem ipsum. Lorem ipsum. 
+               Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+            </p>
+            <p class=""> 
+                Lorem ipsum 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+            </p>
+            <p class=""> 
+                Lorem ipsum 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. 
+                Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. 
+            </p>
+          </div>
+
+          <!--HISTORIAL-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">HISTORIAL </h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EXPERIENCIA LABORAL-->
+              <h3 class="w3-border-amber">EXPERIENCIA LABORAL</h3>
+              <div class="">
+                <h4>Hurto de Curriculum Vitaes</h4>
+                <p>Septiembre 2020 - Presente</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                  <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                  <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Hurto de identidades</h4>
+                <p>Enero 2017 - Junio 2020 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Hurto y delitos menores</h4>
+                <p>Enero 2014 - Mayo 2016 </p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                    <li>Lorem ipsum. Lorem ipsum. Lorem ipsum. </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--SECCIÓN DE EDUCACIÓN-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">EDUCACIÓN</h3>
+                <h4>UNIVERSIDAD NACIONAL DEL SUR, Bahía Blanca, Argentina</h4>
+                <p>Octubre 2008 - Julio 2013 </p>
+                <h4>Escuela de Enseñanza N°13, Bahía Blanca, Argentina</h4>
+                <p>Octubre 2004 - Julio 2008 </p>
+            </div>
+
+            <!--SECCIÓN DE HABILIDADES-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">HABILIDADES</h3>
+              <!--HABILIDADES BLANDAS-->
+              <h4>Habilidades Blandas</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Sin miedo al ridículo</li>
+                <li>Desinterés en el ajeno</li>
+                <li>Reptiliano</li>
+              </ul>
+              <!--HABILIDADES TÉCNICAS-->
+              <h4>Habilidades Técnicas</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Manejo avanzado de MS Office </li>
+                  <li>Manejo avanzado de herramientas gráficas</li>
+                 
+                </ul>
+            </div>
+
+            <!--INTERESES-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">Pasatiempos e intereses</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Uso de instrumentos musicales</li>
+                  <li>Habilidades con herramientas manuales</li>
+                </ul>
+            </div>
+
+            <!--SECCIÓN DE REFERENCIAS-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">REFERENCIAS</h3>
+              <h4>Natalia Natalia, CEO de Verdulerías Natalia Natalia</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>Calle Falsa 123</li>
+              </ul>
+              <h4>Natalio Natalio, CEO de Verdulerías Natalio Natalio</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+0123456789</li>
+                <li>Calle Falsa 123</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--SECCIÓN DE CONTACTO-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACTO</h2>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Nombre: Jim Graham</p>
+              <p>Dirección: Calle Falsa 123, Bahía Blanca, Argentina</p>
+              <p>Teléfono: +0123456789</p>
+              <p>Correo electrónico: Jim.Graham@email.com</p>
+            </div>
+          </div>
+
+        <!--PIE DE PÁGINA-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. (MUY CARADURA BORRARLO) -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>2023 - Jim Graham</p>
+           
+        <!-- FIN DEL PIE DE PÁGINA -->
+        </footer>
+
+        <!--FINAL DE CV-->
+      </div></section>      
+    </section>
+    <script>
+      // FUNCIÓN DEL NAVEGADOR PARA MÓVILES
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // ÍCONOS FEATHER
+      feather.replace()
+    </script>
+  
+</body></html>
